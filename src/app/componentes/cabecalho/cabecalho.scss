@@ -1,0 +1,17 @@
+div {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #012124;
+    padding: 0.5rem;
+    align-items: center;
+
+    div {
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+}
