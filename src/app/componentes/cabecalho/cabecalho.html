@@ -20,11 +20,23 @@
                 Projetos
             </button>
         </a>
-        <a routerLink="/about">
-            <button matButton="filled">
+            <button matButton="filled" [matMenuTriggerFor]="menu">
                 <mat-icon>mail</mat-icon>
                 Contato
             </button>
-        </a>
+        <mat-menu #menu="matMenu"> 
+            <a mat-menu-item href="mailto:eduardo.dedomenico@gmail.com">
+                <mat-icon>mail</mat-icon>
+                Email
+            </a>
+            <a mat-menu-item href="https://www.linkedin.com/in/dedomenico/" target="_blank">
+                <img class="icon" src="/linkedin.svg" alt="">
+                Linkedin
+            </a>
+            <a mat-menu-item href="https://github.com/Dedomenic0" target="_blank">
+                <img class="icon" src="/github.svg" alt="">
+                GitHub
+            </a>
+        </mat-menu>
     </div>
 </div>
