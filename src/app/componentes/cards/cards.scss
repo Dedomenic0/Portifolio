@@ -3,3 +3,8 @@
     font-size: 1rem;
     margin: 1rem;
 }
+
+div {
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+}

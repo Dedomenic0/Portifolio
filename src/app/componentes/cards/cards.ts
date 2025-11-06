@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { MatCardModule } from '@angular/material/card';
+import { Projetos } from '../../services/projetos';
 
 @Component({
   selector: 'app-cards',
@@ -9,4 +10,8 @@ import { MatCardModule } from '@angular/material/card';
 })
 export class Cards {
 
+  projetos = inject(Projetos);
+  
+  listaProjetos = this.projetos.obterProjetos();
+    
 }

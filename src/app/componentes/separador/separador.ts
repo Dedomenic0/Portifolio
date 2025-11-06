@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, input } from '@angular/core';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatCard } from "@angular/material/card";
 
@@ -9,5 +9,6 @@ import { MatCard } from "@angular/material/card";
   styleUrl: './separador.scss',
 })
 export class Separador {
+  titulo = input<string>('');
 
 }
